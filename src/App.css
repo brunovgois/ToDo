@@ -19,7 +19,7 @@ input {
 
 input + button {
   padding: 8px;
-  width: 90px;
+  max-width: 90px;
   height: 54px;
   background-color: #1E6F9F;
   border-radius: 8px;
@@ -31,7 +31,25 @@ input + button {
 
 .inputContainer{
   display: flex;
+  flex-direction: column;
   gap: 8px;
-  margin-top: -27px;
   justify-content: center;
+  align-items: center;
+  max-width: 736px;
+  margin: -27px auto 0 auto;
+}
+.innerInputContainer{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.innerInputContainerHeader{
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.innerInputContainerHeader > div {
+  display: flex;
+  gap: 10px;
 }

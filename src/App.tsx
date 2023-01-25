@@ -11,22 +11,25 @@ function App() {
       </header>
 
       <div className="inputContainer">
-        <input type="text" />
-        <button>
-          <p>Criar</p>
-          <img src={plus} alt="" />
-        </button>
-      </div>
+        <div className="innerInputContainer">
+          <input type="text" />
+          <button>
+            <p>Criar</p>
+            <img src={plus} alt="" />
+          </button>
+        </div>
 
-      <div>
-        <div>
-          <p>Tarefas criadas</p>
-          <p>0</p>
+        <div className="innerInputContainerHeader">
+          <div>
+            <p>Tarefas criadas</p>
+            <p>0</p>
+          </div>
+          <div>
+            <p>Concluídas</p>
+            <p>0</p>
+          </div>
         </div>
-        <div>
-          <p>Concluídas</p>
-          <p>0</p>
-        </div>
+
       </div>
 
       <img src={Clipboard} alt="" />
