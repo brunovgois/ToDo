@@ -12,7 +12,7 @@ function App() {
 
       <div className="inputContainer">
         <div className="innerInputContainer">
-          <input type="text" />
+          <input type="text" placeholder="Adicione uma nova tarefa" />
           <button>
             <p>Criar</p>
             <img src={plus} alt="" />
@@ -21,20 +21,21 @@ function App() {
 
         <div className="innerInputContainerHeader">
           <div>
-            <p>Tarefas criadas</p>
-            <p>0</p>
+            <p className={`label purple`}>Tarefas criadas</p>
+            <p className="counter">0</p>
           </div>
           <div>
-            <p>Concluídas</p>
-            <p>0</p>
+            <p className={`label blue`}>Concluídas</p>
+            <p className="counter">0</p>
           </div>
         </div>
-
       </div>
 
-      <img src={Clipboard} alt="" />
-      <p>Você ainda não tem tarefas cadastradas</p>
-      <p>Cria tarefas e organize seus itens a fazer</p>
+      <div className="noTasksContainer">
+        <img src={Clipboard} alt="" />
+        <p className="noTasksText">Você ainda não tem tarefas cadastradas</p>
+        <p className="noTasksText">Cria tarefas e organize seus itens a fazer</p>
+      </div>
     </>
   );
 }
