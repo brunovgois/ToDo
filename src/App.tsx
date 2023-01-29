@@ -2,6 +2,7 @@ import "./App.css";
 import Logo from "./assets/Logo.svg";
 import plus from "./assets/plus.png";
 import Clipboard from "./assets/Clipboard.png";
+import Task from "./components/Task";
 
 function App() {
   return (
@@ -31,11 +32,20 @@ function App() {
         </div>
       </div>
 
-      <div className="noTasksContainer">
-        <img src={Clipboard} alt="" />
-        <p className="noTasksText">Você ainda não tem tarefas cadastradas</p>
-        <p className="noTasksText">Cria tarefas e organize seus itens a fazer</p>
-      </div>
+      {false ? (
+        <div className="noTasksContainer">
+          <img src={Clipboard} alt="" />
+          <p className="noTasksText">Você ainda não tem tarefas cadastradas</p>
+          <p className="noTasksText">
+            Cria tarefas e organize seus itens a fazer
+          </p>
+        </div>
+      ) : (
+        <>
+          <Task content={'test task'} checked={false} />
+          <Task content={'truetrue'} checked={true} />
+        </>
+      )}
     </>
   );
 }
