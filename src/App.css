@@ -1,16 +1,16 @@
 header {
   width: 100%;
   height: 200px;
-  background-color: #0D0D0D;
+  background-color: #0d0d0d;
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
-input {
+input[type="text"]{
   width: 736px;
   border-radius: 8px;
-  border: 1px solid #0D0D0D;
+  border: 1px solid #0d0d0d;
   background-color: #262626;
   color: #808080;
   font-size: 16px;
@@ -21,7 +21,7 @@ input + button {
   padding: 16px;
   max-width: 90px;
   height: 54px;
-  background-color: #1E6F9F;
+  background-color: #1e6f9f;
   border-radius: 8px;
   display: flex;
   align-items: center;
@@ -31,7 +31,7 @@ input + button {
   margin-left: 8px;
 }
 
-.inputContainer{
+.inputContainer {
   display: flex;
   flex-direction: column;
   gap: 8px;
@@ -40,12 +40,12 @@ input + button {
   max-width: 736px;
   margin: -27px auto 0 auto;
 }
-.innerInputContainer{
+.innerInputContainer {
   display: flex;
   align-items: center;
   justify-content: center;
 }
-.innerInputContainerHeader{
+.innerInputContainerHeader {
   display: flex;
   justify-content: space-between;
   width: 100%;
@@ -61,12 +61,12 @@ input + button {
   font-size: 16px;
 }
 .purple {
-  color: #8284FA;
+  color: #8284fa;
 }
 .blue {
-  color: #4EA8DE;
+  color: #4ea8de;
 }
-.counter{
+.counter {
   background-color: #333333;
   padding: 2px 8px;
   gap: 10px;
@@ -94,9 +94,8 @@ input + button {
   margin-bottom: 16px;
 }
 
-.noTasksText{
+.noTasksText {
   font-weight: 700;
   font-size: 18px;
   color: #808080;
-  
 }
